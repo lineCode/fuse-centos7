@@ -5,8 +5,8 @@ set -o errtrace
 IFS=$'\n\t'
 
 cd /mock/fuse
-curl -O https://dl.fedoraproject.org/pub/fedora/linux/development/rawhide/Workstation/source/tree/Packages/f/fuse-2.9.4-4.fc24.src.rpm
-/usr/bin/mock --yum  --no-cleanup-after --no-clean --resultdir=/builds --postinstall --rebuild /mock/fuse/fuse-2.9.4-4.fc24.src.rpm
+curl -O https://kojipkgs.fedoraproject.org/packages/fuse/2.9.7/1.fc24/src/fuse-2.9.7-1.fc24.src.rpm
+/usr/bin/mock --yum  --no-cleanup-after --no-clean --resultdir=/builds --postinstall --rebuild /mock/fuse/fuse-2.9.7-1.fc24.src.rpm
 
 cd /mock/s3fs-fuse
 S3FS_COMMIT=$(git ls-remote https://github.com/s3fs-fuse/s3fs-fuse HEAD | awk '{ print $1 }')

@@ -1,6 +1,6 @@
 # Fuse Building for epel-7-x86_64
 
-* Fuse 2.9.4 backported from Fedora Rawhide.
+* Fuse 2.9.7-1 backported from Fedora Rawhide.
 * [s3fs-fuse](https://github.com/s3fs-fuse/s3fs-fuse) from git master branch HEAD, RPM spec from https://github.com/juliogonzalez/s3fs-fuse-rpm
 
 ```shell
